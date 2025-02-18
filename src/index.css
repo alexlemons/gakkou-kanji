@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0; 
+}
+
+:root {
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  /* set letter-spacing so character width equals line-height */
+  /* letter-spacing: 0.8rem; */
+  line-height: 2.9rem;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  font-size: 2.1rem;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container-kanji {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.1rem;
+
+  /* background: rgb(50,50,50); */
+  /* mix-blend-mode: color-dodge; */
+  /* padding: 2.9rem 0; */
+}
+
+.kanji {
+  cursor: pointer;
+  opacity: 0.02;
+  width: 2.4rem;
+}
+
+.selected {
+  color: red;
+  transition: opacity 0.4s;
+}
+
+.ani-0 {
+  animation: fade-in 0.4s linear 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0.01 }
+  100% { opacity: 1.0 }
+}
