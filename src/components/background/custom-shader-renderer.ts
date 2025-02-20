@@ -68,6 +68,7 @@ export class CustomShaderRenderer {
       vertexShader: defaultVertexShader,
       fragmentShader,
       uniforms: this.uniforms,
+      glslVersion: THREE.GLSL3,
     });
 
     // Create a full-screen quad (a plane that covers clip space) and add it to the scene.

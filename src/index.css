@@ -33,10 +33,11 @@
 .container-kanji {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.1rem;
+  position: relative;
 
-  /* background: rgb(50,50,50); */
-  /* mix-blend-mode: color-dodge; */
+  background: rgb(50,50,50);
+  mix-blend-mode: difference;
+  backdrop-filter: blur(8px);
   /* padding: 2.9rem 0; */
 }
 
@@ -50,6 +51,15 @@
   color: red;
   transition: opacity 0.4s;
 }
+
+.kanji-meaning {
+  bottom: -4rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* ANIMATIONS */
 
 .ani-0 {
   animation: fade-in 0.4s linear 1s;
